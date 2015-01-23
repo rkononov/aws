@@ -1984,6 +1984,8 @@ module Aws
             @instance[:aws_availability_zone] = @text
           when 'privateIpAddress' then
             @instance[:aws_private_ip_address] = @text
+          when 'ipAddress' then
+            @instance[:aws_public_ip_address] = @text
           when 'subnetId' then
             @instance[:subnet_id] = @text
           when 'vpcId' then
